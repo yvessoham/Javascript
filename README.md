@@ -1,4 +1,4 @@
-[Banner -CookieClicker](/CookieClicker/images/CookieClicker%20-Banner.png)
+![Banner -CookieClicker](/images/CookieClicker%20-Banner.png)
 # Preview
 
 - [Live demo]()
@@ -17,7 +17,7 @@ The layout is really simple, with the cookie button and the point on one side, a
 
 
 Of course, we choose colors that remind us of a cookie and we will try to find fonts and animation that suit that theme. 
-![Banner -CookieClicker](/CookieClicker/images/CookieClicker%20-Wireframe.png)
+![Banner -CookieClicker](/images/CookieClicker%20-Wireframe.png)
  
 # Pending things to do
 - Javascript
