@@ -8,7 +8,7 @@ To improve our JavaScript skills, we have 5 days to create a cookie clicker game
 
 # Languages and frameworks used 
 - HTML5, CSS3
-- Javascript !
+- Javascript 
 
 # Wireframe - First draft
 We want to make a minimalist yet beautiful layout inspired by the [original game](https://orteil.dashnet.org/cookieclicker/) to offer a user-friendly design experience. 
