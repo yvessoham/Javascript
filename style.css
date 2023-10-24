@@ -38,6 +38,7 @@ audio {
   margin-left: 100px;
   text-align: center;
   color: rgb(217, 211, 211);
+  max-width: 35vw;
 }
 h2 {
   grid-area: cookie2;
@@ -45,6 +46,8 @@ h2 {
     font-family: "Luckiest Guy", cursive;
     font-size: 3em;
     line-height: 1em;
+    max-width: 35vw;
+
     
 
 }
@@ -61,8 +64,11 @@ h2 {
   grid-area: button;
   display: flex;
   flex-direction: column;
-  row-gap: 30px;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
   margin-left: 200px;
+  width: 60vw;
 }
 button {
   height: 75px;
@@ -72,12 +78,13 @@ button {
   font-size: 35px;
   font-family: fantasy;
   background-color: rgb(90, 89, 93);
-  font-family: 'Poppins', sans-serif;    
+  font-family: 'Poppins', sans-serif; 
+  width: 520px 
 }
 
 div button {
-  gri
-  width: 170px;
+  display:i inline-flex;
+  width: 150px;
 }
 .img {
   cursor: pointer;
