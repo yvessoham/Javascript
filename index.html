@@ -1,12 +1,47 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel= stylesheet href= style.css>
+    <link rel="stylesheet" href="style.css" />
     <title>Cookie clicker</title>
   </head>
-  <body>
+
+  <body class="grid.container">
+    <audio controls autoplay >
+      
+      <source src="image/spooky-halloween-effects-with-thunder-121665.mp3" type="audio/mpeg">
+      Votre navigateur ne prend pas en charge l'élément audio.
+  </audio>
+    <video id="background-video" autoplay muted loop>
+    
+      <source src="image/181881 (540p).mp4" type="video/mp4">
+      Votre navigateur ne prend pas en charge l'élément vidéo.
+  </video>
+ 
+    <header class="entete">
+      <h1>COOKIE CLICKER</h1>
+    </header>
+
+    <main class="corps">
+      <section id="cookie">
+        <figure id="images">
+          <button class="img">
+            <img src="image/citrouille.png" alt="coockie" width="400px" />
+          </button>
+        </figure>
+
+        <h2><b>Score: </b><span id="score">0 cookie(s)</span></h2>
+      </section>
+
+      <section id="button">
+        <button id="multiplicateur">Multiplicateur</button>
+        <button id="dante">Dante</button>
+        <button id="mike">Mike</button>
+        <button id="auto">Auto-clicker</button>
+        <button id="bonus">Bonus</button>
+      </section>
+    </main>
     <script type="module" src="/main.js"></script>
   </body>
 </html>

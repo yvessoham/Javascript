@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap");
+.grid.container {
+  display: grid;
+  grid-template-rows: 1fr 2fr;
+  grid-template-columns: 1fr ;
+  
+  
+
+
+}
+
+.entete {
+  grid-area: entete;
+  text-align: center;
+  font-family: "Luckiest Guy", cursive;
+  color: antiquewhite;
+  font-size: 50px;
+}
+.corps {
+  grid-area: corps;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "cookie button";
+  justify-content: center;
+}
+
+#cookie {
+  grid-area: cookie;
+  margin-right: 100px;
+  text-align: center;
+  color: rgb(217, 211, 211);
+ 
+
+}
+h2 {
+  font-size: 50px;
+  border: 1px solid rgb(196, 91, 21);
+  border-radius: 8px;
+  padding: 5px 5px 5px 5px;
+}
+
+#button {
+  grid-area: button;
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
+  margin-left: 200px;
+}
+button {
+  height: 75px;
+  border: 2px solid rgb(221, 136, 17);
+  border-radius: 8px;
+  box-shadow: 4px 4px 4px 4px;
+  font-size: 35px;
+  font-family: fantasy;
+  background-color: rgb(90, 89, 93);
+  
+}
+
+.img {
+  height: 400px;
+  border: 0px solid;
+  border-radius: 50%;
+  box-shadow: none;
+  background-color: rgba(255, 235, 205, 0);
+  animation: rotates 100s linear infinite;
+}
+@keyframes rotates {
+  from{
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+#background-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Assurez-vous que la vidéo couvre tout le conteneur */
+  z-index: -1; /* Placez la vidéo en arrière-plan derrière le contenu */
+}
+audio::-webkit-media-controls {
+  background-color: rgb(76, 77, 89); /* Changez cette couleur en fonction de votre préférence */
+  color: #695757; /* Couleur du texte à l'intérieur des contrôles */
+}
+audio::-webkit-media-controls-play-button,
+audio::-webkit-media-controls-mute-button {
+    background-color: rgb(225, 216, 210); /* Changez cette couleur en fonction de votre préférence */
+}
