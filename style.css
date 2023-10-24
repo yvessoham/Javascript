@@ -7,9 +7,7 @@
   height: 100vh;
 }
 
-audio {
-  display: none;
-}
+
 
 .entete {
   grid-area: entete;
