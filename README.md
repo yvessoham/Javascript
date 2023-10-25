@@ -47,7 +47,7 @@ To update your local git directory:
 
 **Note:** on `git pull` errors: You may get a `git pull` error if you have made changes to files in your local git directory. This is ok, and normal. If you get an error when you `pull` (or update) the repo that says something like "Your local changes to the following files will be overwritten by merge’", you can do a `git stash` to address this. To find out how to do this, go to https://git-scm.com/book/en/v1/Git-Tools-Stashing to read all about it.
 
-## Updating Your Local Changes To Remote The Repository
+## Updating Your Local Changes To The Remote Repository
 
 1. `git status` 
     Always a good idea, this command shows you what branch you're on, what files are in the working or staging directory, and any other important information.
