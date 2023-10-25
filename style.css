@@ -32,7 +32,6 @@ audio::-webkit-media-controls-mute-button {
 /*-------------------------------------------------------------------------------------------------*/
 
 .grid.container {
-  background-color: #f0a441;
   max-width: 100vw;
   max-height: 100vh;
   /*display: grid;
@@ -47,9 +46,16 @@ audio::-webkit-media-controls-mute-button {
   font-family: "Luckiest Guy", cursive;
   color: rgb(255, 225, 186);
   display: flex;
-  align-items: center;
+  align-items: flex-end;
   justify-content: center;
-  /*font-size: ;*/
+  padding: 1em 2em 0 2em;
+}
+
+h1 {
+  color:#D96813;
+  text-shadow: 1px 1px 5px black;
+  font-size: clamp(50px,7.5vw + 1rem, 100px);
+  line-height: 100%;
 }
 
 
@@ -80,7 +86,9 @@ audio::-webkit-media-controls-mute-button {
   height: 90%;
   animation: rotates 100s linear infinite;
   cursor: pointer;
+  padding: 0 1em 0 1em;
 }
+
 
 @keyframes rotates {
   from{
@@ -95,9 +103,9 @@ h2 {
   grid-area: cookie2;
   text-align: center;
   font-family: "Luckiest Guy", cursive;
-  /*font-size: 3em;
-  line-height: 1em;
-  max-width: 35vw;*/
+  font-size: clamp(32px,2.5vw + 1rem, 64px);
+  line-height: 75%;
+  padding: 1em;
 }
 
 #score {
@@ -115,32 +123,43 @@ h2 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 0.5em;
+  gap: 1.5em;
 }
 
 button {
   height: 75px;
   border: 1px solid black;
   border-radius: 5px;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
   /*font-size: */
-  padding: 0.5em;;
+  padding: 5px;
   font-family: fantasy;
   background: linear-gradient(-110deg, rgb(241, 158, 44), rgb(208, 84, 10));
-  font-family: 'Poppins', sans-serif; 
+  font-family: "Luckiest Guy", cursive;
+  font-size: clamp(16px,1vw + 1rem, 48px); 
   width: 65%; 
   cursor: pointer;
+  transition: all 200ms;
 }
+
+
+
+
+button:hover {
+  transform: scale(1.1) translateY(-1px);
+}
+
 
 div {
   width:65%;
+  padding: 16px 0 16px 0;
 }
 
 .multiplicateurs {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 0.5em;
+  gap: 0.75em;
 }
 
 /*------------------------------------------------------------- */
@@ -160,3 +179,8 @@ div {
   .img {
     height: 75%;
        }
+
+  #button {
+    align-items: flex-start;
+
+  }
