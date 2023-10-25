@@ -67,5 +67,6 @@ We are 4 enthusiastic junior developers in training at [Becode](becode.org/). Fi
 - [washupo](https://github.com/washupo/)
 
 # Credits
-- [Seamless dripping caramel vector](https://www.vecteezy.com/free-vector/seamless) by Timplaru Emil - Vecteezy
-- [Cookie button](https://freepng.pictures/download/cookies-31/) - Free PNG pictures
+- [Background video](https://pixabay.com/fr/videos/citrouilles-for%C3%AAt-la-terreur-fonc%C3%A9-181881/) - Pixabay
+- [Pumpkin button](https://pixabay.com/fr/illustrations/ai-g%C3%A9n%C3%A9r%C3%A9-biscuit-orange-chocolat-8170183/) - Pixabay
+- [Music]() -
