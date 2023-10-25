@@ -1,121 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Poppins:ital,wght@0,800;0,900;1,800&display=swap');
 
-.grid.container {
-  display: grid;
-  grid-template-rows: 2fr 3fr;
-  grid-template-columns: 1fr ;
-  height: 100vh;
+*{
+  margin: 0;
+  padding: 0;
 }
 
-
-
-.entete {
-  grid-area: entete;
-  text-align: center;
-  font-family: "Luckiest Guy", cursive;
-  color: antiquewhite;
-  font-size: 50px;
-}
-
-
-
-.corps {
-  grid-area: corps;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 3fr 1fr;
-  grid-template-areas: 
-  "cookie1 button"
-  "cookie2 button";
-  justify-content: center;
-  height: 75vh;
-  }
-
-#cookie {
-  grid-area: cookie1;
-  margin-left: 100px;
-  text-align: center;
-  color: rgb(217, 211, 211);
-  max-width: 35vw;
-}
-h2 {
-  grid-area: cookie2;
-  text-align: center;
-    font-family: "Luckiest Guy", cursive;
-    font-size: 3em;
-    line-height: 1em;
-    max-width: 35vw;
-
-    
-
-}
-
-
-
-#score {
-  color: #f0a441;
-  font-size: 1.75em;
-  line-height: 1em;
-}
-
-#button {
-  grid-area: button;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 30px;
-  margin-left: 200px;
-  width: 60vw;
-}
-button {
-  height: 75px;
-  border: 2px solid rgb(221, 136, 17);
-  border-radius: 8px;
-  box-shadow: 4px 4px 4px 4px;
-  font-size: 35px;
-  font-family: fantasy;
-  background-color: rgb(90, 89, 93);
-  font-family: 'Poppins', sans-serif; 
-  width: 520px 
-}
-
-div button {
-  display:i inline-flex;
-  width: 150px;
-}
-.img {
-  cursor: pointer;
-    box-shadow: none;
-    background-color: transparent;
-    background-image: url('image/citrouille.png'); 
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center; 
-    width: 45vw;
-    height: 100%; 
-    border: none;
-    border-radius: 50%;
-    background-color: transparent;
-    animation: rotates 100s linear infinite; 
-}
-@keyframes rotates {
-  from{
-    transform: rotate(0);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
 #background-video {
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
+  min-width: 100vw;
+  min-height: 100vh;
+  background-position: center center;
   object-fit: cover; /* Assurez-vous que la vidéo couvre tout le conteneur */
   z-index: -1; /* Placez la vidéo en arrière-plan derrière le contenu */
 }
+
+audio {
+  position: absolute;
+}
+
 audio::-webkit-media-controls {
   background-color: rgb(76, 77, 89); /* Changez cette couleur en fonction de votre préférence */
   color: #695757; /* Couleur du texte à l'intérieur des contrôles */
@@ -125,47 +29,134 @@ audio::-webkit-media-controls-mute-button {
     background-color: rgb(225, 216, 210); /* Changez cette couleur en fonction de votre préférence */
 }
 
-@media (max-width: 811px) {
+/*-------------------------------------------------------------------------------------------------*/
+
+.grid.container {
+  background-color: #f0a441;
+  max-width: 100vw;
+  max-height: 100vh;
+  /*display: grid;
+  grid-template-rows: 2fr 3fr;
+  grid-template-columns: 1fr ;*/
+}
+
+
+.entete {
+  height: 15vh;
+  text-align: center;
+  font-family: "Luckiest Guy", cursive;
+  color: rgb(255, 225, 186);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /*font-size: ;*/
+}
+
+
+.corps {
+  height: 85vh;
+  /* grid-area: corps;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 3fr 1fr;
+  grid-template-areas: 
+  "cookie1 button"
+  "cookie2 button";
+  justify-content: center;*/
+}
+
+#cookie {
+  height: 60vh;
+  /*grid-area: cookie1;*/
+  color: rgb(217, 211, 211);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.img {
+  width: auto;
+  height: 90%;
+  animation: rotates 100s linear infinite;
+  cursor: pointer;
+}
+
+@keyframes rotates {
+  from{
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+h2 {
+  grid-area: cookie2;
+  text-align: center;
+  font-family: "Luckiest Guy", cursive;
+  /*font-size: 3em;
+  line-height: 1em;
+  max-width: 35vw;*/
+}
+
+#score {
+  color: #f0a441;
+  font-size: 1.75em;
+  line-height: 1em;
+}
+/*---------------------------------------------------------------------*/
+#button {
+  max-width: 100vw;
+  min-height: 30%;
+  padding: 1em;
+  /*grid-area: button;*/
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5em;
+}
+
+button {
+  height: 75px;
+  border: 1px solid black;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  /*font-size: */
+  padding: 0.5em;;
+  font-family: fantasy;
+  background: linear-gradient(-110deg, rgb(241, 158, 44), rgb(208, 84, 10));
+  font-family: 'Poppins', sans-serif; 
+  width: 65%; 
+  cursor: pointer;
+}
+
+div {
+  width:65%;
+}
+
+.multiplicateurs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5em;
+}
+
+/*------------------------------------------------------------- */
+
+@media (min-width: 811px) {
   .corps {
     display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr;
-    grid-template-areas: 
-    "cookie"
-    "button";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    /*grid-template-areas: ;*/
   }
 
   #cookie {
-    margin-right: 100px;
-  }
-
-  .images {
-    width:100px ;
+    height: 85vh;
   }
 
   .img {
-      width: 75vw;
-      height: 100%; 
+    height: 75%;
        }
-
-  #cookie {
-    grid-area: cookie;
-    margin-left: 100px;
-
-  } 
-
-
-
-
-
-  #button {
-    grid-area: button;
-    display: flex;
-    flex-direction: column;
-    row-gap: 30px;
-    margin-left: 200px;
-  }
-
-  
-
-}
