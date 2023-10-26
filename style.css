@@ -150,18 +150,6 @@ button:hover {
 }
 
 
-div {
-  width:65%;
-  padding: 16px 0 16px 0;
-}
-
-.multiplicateurs {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 0.75em;
-}
-
 /*------------------------------------------------------------- */
 
 @media (min-width: 811px) {
