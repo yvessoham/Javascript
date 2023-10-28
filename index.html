@@ -4,37 +4,95 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Eater&family=Nosifer&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Eater&family=Nosifer&display=swap"
+      rel="stylesheet"
+    />
     <title>Pumpkins clicker</title>
   </head>
 
   <body class="grid.container">
     <audio controls autoplay muted>
-      
-      <source src="image/spooky-halloween-effects-with-thunder-121665.mp3" type="audio/mpeg">
+      <source
+        src="image/spooky-halloween-effects-with-thunder-121665.mp3"
+        type="audio/mpeg"
+      />
       Votre navigateur ne prend pas en charge l'élément audio.
-  </audio>
+    </audio>
     <video id="background-video" autoplay muted loop>
-    
-      <source src="image/181881 (540p).mp4" type="video/mp4">
+      <source src="image/181881 (540p).mp4" type="video/mp4" />
       Votre navigateur ne prend pas en charge l'élément vidéo.
-  </video>
- 
+    </video>
+
     <header class="entete">
-      <h1>PUMPKINS CLICKER</h1>
+      <div>
+        <span id="I">P</span>
+        <span id="T">U</span>
+        <span id="I">M</span>
+        <span id="I">P</span>
+        <span id="T">K</span>
+        <span id="I">I</span>
+        <span id="T">N</span>
+        <span id="I">🎃</span><br>
+        <span id="T">C</span>
+        <span id="I">L</span>
+        <span id="T">I</span>
+        <span id="I">C</span>
+        <span id="T">K</span>
+        <span id="I">E</span>
+        <span id="I">R</span>
+      </div>
+    </header>
+    <div class="spider">
+      <div class="spiderweb"></div>
+      <div class="body">
+        <div class="eye left"></div>
+        <div class="eye right"></div>
+      </div>
+      <div class="legs left">
+        <div class="leg"></div>
+        <div class="leg"></div>
+        <div class="leg"></div>
+      </div>
+      <div class="legs right">
+        <div class="leg"></div>
+        <div class="leg"></div>
+        <div class="leg"></div>
+      </div>
+    </div>
+  
     </header>
 
     <main class="corps">
       <section id="cookie">
-        <img src="image/citrouille.png" alt="Description de l'image" class="img" id="buton">
-        <h2>Score :<br><span id="score"> 0 </span><br>cookie(s)</h2>
+        <img
+          src="image/citrouille.png"
+          alt="Description de l'image"
+          class="img"
+          id="pumpkin"
+          onclick="pumpclik()"
+        />
+        <h2>Score :<br /><span id="score"> 0 </span><br />cookie(s)</h2>
       </section>
 
       <section id="button">
-        <button id="multi1" href="#">X1</button>
-        <button id="dante">Dante</button>
-        <button id="mike" >Mike</button>
-        <button id="auto">Auto-clicker</button>
-        <button id="bonus">Bonus</button>
+        <button id="multi5" onclick="multiplicateurx5()">
+          Multiplicateur coût: 10
+        </button>
+        <button id="dante" onclick="dante()">Dante(+1000) coût: 200</button>
+        <button id="mike" onclick="mike()">Mike(+2500) coût: 500</button>
+        <button id="auto" onclick="autoclicker()">
+          Auto-clicker coût: 100
+        </button>
+        <button id="bonus" onclick="sweatrick()">Sweats or Tricks</button>
       </section>
     </main>
     <script type="module" src="main.js" refer></script>
