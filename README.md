@@ -1,7 +1,7 @@
 ![Banner -CookieClicker](/images/CookieClicker%20-Banner.png)
 # Preview
 
-- [Live demo]()
+- [Live demo](https://yvessoham.github.io/Javascript/)
 # Instructions
 To improve our JavaScript skills, we have 5 days to create a cookie clicker game as a team. 
 - [Instructions links](https://github.com/becodeorg/Swartz-8/blob/main/2.The-Hill/1.Javascript/cookieClicker.md)
@@ -69,4 +69,3 @@ We are 4 enthusiastic junior developers in training at [Becode](becode.org/). Fi
 # Credits
 - [Background video](https://pixabay.com/fr/videos/citrouilles-for%C3%AAt-la-terreur-fonc%C3%A9-181881/) - Pixabay
 - [Pumpkin button](https://pixabay.com/fr/illustrations/ai-g%C3%A9n%C3%A9r%C3%A9-biscuit-orange-chocolat-8170183/) - Pixabay
-- [Music]() -
