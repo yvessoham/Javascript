@@ -1,3 +1,4 @@
+
 (() => {
   let score = 0;
   let multiclick = 1;
@@ -7,8 +8,8 @@
   let coutautoclicker = 100;
   let timeoutautoclicker = false;
   let coutsweatrick = 1000;
-  const min = 0;
-  const max = 100000;
+  const min = -5000;
+  const max = 5000;
 
   const cookiescore = document.getElementById("score");
   const clickbutton = document.getElementById("pumpkin");
@@ -174,3 +175,4 @@
     cookiescore.textContent = score;
   }
 })();
+
