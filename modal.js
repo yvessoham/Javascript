@@ -52,3 +52,5 @@ window.onclick = function (event) {
     modal.style.display = "none";
   }
 };
+// open modal event
+openModalBtn.addEventListener("click", openModal);
