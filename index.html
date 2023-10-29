@@ -2,6 +2,15 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta name="title" content="Pumpkin generator" />
+    <meta
+      name="description"
+      content="Halloween themed Idle game inspired by the Cookie clicker game. "
+    />
+    <meta name="keywords" content="game, clicker, IDLLE, pumpkin, halloween" />
+    <meta name="robots" content="index, follow" />
+    <meta http-equiv="content-type" />
+    <meta name="language" content="English" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -19,82 +28,216 @@
     <title>Pumpkins clicker</title>
   </head>
 
-  <body class="grid.container">
-    <audio controls autoplay muted>
-      <source
-        src="image/spooky-halloween-effects-with-thunder-121665.mp3"
-        type="audio/mpeg"
-      />
-      Votre navigateur ne prend pas en charge l'élément audio.
-    </audio>
+  <body class="grid-container">
+    <div
+      id="cookiebanner"
+      class="alert alert-info text-center mb-0"
+      role="alert"
+    >
+      <img id="vampire" src="image/vampire.gif" alt="gif vampire" />
+      <p id="halloween">
+        Accept halloween horrors conditions.
+        <a id="link" href="#" onclick="accepterCookies()">
+          <img src="image/death.png" alt="death" class="death" />
+          I accept
+          <img src="image/death.png" alt="death" class="death" />
+        </a>
+      </p>
+    </div>
+
     <video id="background-video" autoplay muted loop>
-      <source src="image/181881 (540p).mp4" type="video/mp4" />
+      <source src="image/181881_(540p).mp4" type="video/mp4" />
       Votre navigateur ne prend pas en charge l'élément vidéo.
     </video>
 
-    <header class="entete">
-      <div>
-        <span id="I">P</span>
-        <span id="T">U</span>
-        <span id="I">M</span>
-        <span id="I">P</span>
-        <span id="T">K</span>
-        <span id="I">I</span>
-        <span id="T">N</span>
-        <span id="I">🎃</span><br>
-        <span id="T">C</span>
-        <span id="I">L</span>
-        <span id="T">I</span>
-        <span id="I">C</span>
-        <span id="T">K</span>
-        <span id="I">E</span>
-        <span id="I">R</span>
-      </div>
-    </header>
-    <div class="spider">
-      <div class="spiderweb"></div>
-      <div class="body">
-        <div class="eye left"></div>
-        <div class="eye right"></div>
-      </div>
-      <div class="legs left">
-        <div class="leg"></div>
-        <div class="leg"></div>
-        <div class="leg"></div>
-      </div>
-      <div class="legs right">
-        <div class="leg"></div>
-        <div class="leg"></div>
-        <div class="leg"></div>
+    <div id="top">
+      <audio id="myAudio" controls autoplay loop>
+        <source
+          src="image/spooky-halloween-effects-with-thunder-121665.mp3"
+          type="audio/mpeg"
+        />
+        Votre navigateur ne prend pas en charge l'élément audio.
+      </audio>
+
+      <button class="btn-open">Instructions</button>
+      <div class="overlay hidden">
+        <section class="modal hidden" id="modales">
+          <div class="flex">
+            <img
+              id="halloweengif"
+              src="image/halloween_modal.gif.gif"
+              alt="Halloween gif"
+            />
+            <button class="btn-close"></button>
+          </div>
+          <div>
+            <h3>HOW TO PLAY</h3>
+
+            <p class="modaltext">
+              Certainly! "Pumpkins Clicker" is a popular incremental game where
+              the goal is to produce as many pumpkins as possible. Here are the
+              basic instructions on how to play "Pumpkin Clicker":
+            </p>
+            <br>
+
+            <p class="modaltext">
+              Click the Pumpkins: The primary action in the game is clicking the
+              big lightning pumpkin on the screen. Each click generates one cookie.
+            </p>
+
+            <p class="modaltext">
+              Collect Pump: As you click the pumpkins, you start collecting
+              pumpkins. These pumpkins serve as your currency in the game.
+            </p>
+
+            <p class="modaltext">
+              Buy Multiply: Use the pumpkins you've collected to buy Multiply
+              and other items that automate the cookie-making process.
+            </p>
+
+            <p class="modaltext">
+              Upgrades: Spend your pumpkins on upgrades that improve your pumpkin
+              production. Upgrades can enhance your clicking power, increase the
+              efficiency of your buildings, or even unlock special abilities.
+            </p>
+
+            <p class="modaltext">
+              Keep Farming: "pumpkins Clicker" is an endless game. The goal is to
+              keep farming pumpkins, buying buildings, and unlocking upgrades to
+              increase your production exponentially. The more pumpkins you
+              bake, the faster you progress.
+            </p>
+
+            <p class="modaltext">
+              Remember, the game is designed to be addictive and engaging,
+              encouraging you to keep clicking, strategizing, and expanding your
+              pumpkin empire. Have fun baking pumpkins and watching your
+              production grow!
+            </p>
+          </div>
+
+          <button id="buttonm">LET'S START!!!</button>
+        </section>
       </div>
     </div>
-  
+
+    <header class="entete">
+      <h1>
+        <span class="I">P</span>
+        <span class="T">U</span>
+        <span class="I">M</span>
+        <span class="I">P</span>
+        <span class="T">K</span>
+        <span class="I">I</span>
+        <span class="T">N</span>
+        <span class="I">🎃</span><br />
+        <span class="T">C</span>
+        <span class="I">L</span>
+        <span class="T">I</span>
+        <span class="I">C</span>
+        <span class="T">K</span>
+        <span class="I">E</span>
+        <span class="I">R</span>
+      </h1>
+
+      <div class="spider">
+        <div class="spiderweb"></div>
+        <div class="body">
+          <div class="eye left"></div>
+          <div class="eye right"></div>
+        </div>
+        <div class="legs left">
+          <div class="leg"></div>
+          <div class="leg"></div>
+          <div class="leg"></div>
+        </div>
+        <div class="legs right">
+          <div class="leg"></div>
+          <div class="leg"></div>
+          <div class="leg"></div>
+        </div>
+      </div>
     </header>
 
     <main class="corps">
       <section id="cookie">
         <img
           src="image/citrouille.png"
-          alt="Description de l'image"
+          alt="Pumpkin cookie"
           class="img"
-          id="pumpkin"
-          onclick="pumpclik()"
+          
         />
+
+        <div class="parent" id="pumpkin"
+        onclick="pumpclik()"> 
+          <svg>
+            <filter id="wavy">
+              <feTurbulence x="0" y="0" baseFrequency="0.009" numOctaves="5" speed="2">
+                <animate attributeName="baseFrequency" dur="60s" values="0.02; 0.005; 0.02" repeatCount="indefinite">
+                </animate>
+              </feTurbulence>
+              <feDisplacementMap in="SourceGraphic" scale="30">
+                </feDisplacementMap>
+                </feTurbulence>
+            </filter>
+          </svg>
+          <div class="circle"></div>
+        </div>
+
+        <p id="pointParClick">pumpkins/click</p>
         <h2>Score :<br /><span id="score"> 0 </span><br />cookie(s)</h2>
       </section>
 
       <section id="button">
-        <button id="multi5" onclick="multiplicateurx5()">
-          Multiplicateur coût: 10
+        <button id="multi5" onclick="multiplicateurx5()" disabled>
+          <p>Multiplicateur</p>
+          <p class="cout">Cost : 10 pumpkins</p>
         </button>
-        <button id="dante" onclick="dante()">Dante(+1000) coût: 200</button>
-        <button id="mike" onclick="mike()">Mike(+2500) coût: 500</button>
-        <button id="auto" onclick="autoclicker()">
-          Auto-clicker coût: 100
+        <button id="dante" onclick="btnDante()" disabled>
+          <p>Dante</p>
+          <p class="cout"></p>
         </button>
-        <button id="bonus" onclick="sweatrick()">Sweats or Tricks</button>
+        <button id="auto" onclick="autoclicker()" disabled>
+          <p>Auto-clicker</p>
+          <p class="cout">Cost 100 pumpkins</p>
+        </button>
+        <button id="bonus" onclick="sweatrick()" disabled>
+          <p>Sweats or Tricks</p>
+          <p class="cout">Cost 1000 pumpkins</p>
+        </button>
       </section>
     </main>
-    <script type="module" src="main.js" refer></script>
+
+    <script type="module" src="main.js"></script>
+    <script>
+      function accepterCookies() {
+        document.cookie =
+          "accepterCookies=true; expires=" +
+          new Date(
+            new Date().getTime() + 365 * 24 * 60 * 60 * 1000
+          ).toUTCString() +
+          "; path=/";
+
+        const cookieBanner = document.getElementById("cookiebanner");
+        cookieBanner.style.display = "none";
+      }
+
+      window.onload = function () {
+        const accepteCookies = getCookie("accepterCookies");
+        const cookieBanner = document.getElementById("cookiebanner");
+        if (!accepteCookies) {
+          cookieBanner.style.display = "flex";
+        } else {
+          cookieBanner.style.display = "flex";
+        }
+      };
+
+      function getCookie(name) {
+        const value = "; " + document.cookie;
+        const parts = value.split("; " + name + "=");
+        if (parts.length == 2) return parts.pop().split(";").shift();
+      }
+    </script>
+    <script type="module" src="modal.js"></script>
   </body>
 </html>
