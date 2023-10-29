@@ -1,3 +1,4 @@
+
 (() => {
   let score = 0;
   let multiclick = 1;
@@ -174,3 +175,4 @@
     cookiescore.textContent = score;
   }
 })();
+
