@@ -1,0 +1,223 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="title" content="Pumpkin generator" />
+    <meta
+      name="description"
+      content="Halloween themed Idle game inspired by the Cookie clicker game. "
+    />
+    <meta name="keywords" content="game, clicker, IDLLE, pumpkin, halloween" />
+    <meta name="robots" content="index, follow" />
+    <meta http-equiv="content-type" />
+    <meta name="language" content="English" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Eater&family=Nosifer&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Eater&family=Nosifer&display=swap"
+      rel="stylesheet"
+    />
+    <title>Pumpkins clicker</title>
+    <script type="module" crossorigin src="./assets/index-17c4bb31.js"></script>
+    <link rel="stylesheet" href="./assets/index-b5101844.css">
+  </head>
+
+  <body class="grid-container">
+    <div
+      id="cookiebanner"
+      class="alert alert-info text-center mb-0"
+      role="alert"
+    >
+      <img id="vampire" src="./assets/vampire-8da555b7.gif" alt="gif vampire" />
+      <p id="halloween">
+        Accept halloween horrors conditions.
+        <a id="link" href="#" onclick="accepterCookies()">
+          <img src="data:image/png;base64,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" alt="death" class="death" />
+          I accept
+          <img src="data:image/png;base64,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" alt="death" class="death" />
+        </a>
+      </p>
+    </div>
+
+    <video id="background-video" autoplay muted loop>
+      <source src="./assets/181881_(540p)-13ce957a.mp4" type="video/mp4" />
+      Votre navigateur ne prend pas en charge l'élément vidéo.
+    </video>
+
+    <div id="top">
+      <audio id="myAudio" controls autoplay loop>
+        <source
+          src="./assets/spooky-halloween-effects-with-thunder-121665-6bd271fd.mp3"
+          type="audio/mpeg"
+        />
+        Votre navigateur ne prend pas en charge l'élément audio.
+      </audio>
+
+      <button class="btn-open">Instructions</button>
+      <div class="overlay hidden">
+        <section class="modal hidden" id="modales">
+          <div class="flex">
+            <img
+              id="halloweengif"
+              src="./assets/halloween_modal.gif-bfc02669.gif"
+              alt="Halloween gif"
+            />
+            <button class="btn-close"></button>
+          </div>
+          <div>
+
+            <h3>HOW TO FARM PUMPKINS</h3>
+
+            <p class="modaltext">
+              Click the Pumpkins: The primary action in the game is clicking the
+              big lightning pumpkin on the screen. Each click generates one pumpkin.
+            </p>
+            
+            <p class="modaltext">
+              Buy Multiply and upgrades.
+            </p>
+            <p class="modaltext">
+              Keep Farming: "pumpkins Clicker" is an endless game.
+            </p>
+            <p class="modaltext">
+
+              Sweats or tricks :  You can gain or loose your progression with this one.
+               DARE !!!
+            </p>
+
+          </div>
+
+          <button id="buttonm">LET'S FARM !!!</button>
+        </section>
+      </div>
+    </div>
+
+    <header class="entete">
+      <h1>
+        <span class="I">P</span>
+        <span class="T">U</span>
+        <span class="I">M</span>
+        <span class="I">P</span>
+        <span class="T">K</span>
+        <span class="I">I</span>
+        <span class="T">N</span>
+        <span class="I">🎃</span><br />
+        <span class="T">C</span>
+        <span class="I">L</span>
+        <span class="T">I</span>
+        <span class="I">C</span>
+        <span class="T">K</span>
+        <span class="I">E</span>
+        <span class="I">R</span>
+      </h1>
+
+      <div class="spider">
+        <div class="spiderweb"></div>
+        <div class="body">
+          <div class="eye left"></div>
+          <div class="eye right"></div>
+        </div>
+        <div class="legs left">
+          <div class="leg"></div>
+          <div class="leg"></div>
+          <div class="leg"></div>
+        </div>
+        <div class="legs right">
+          <div class="leg"></div>
+          <div class="leg"></div>
+          <div class="leg"></div>
+        </div>
+      </div>
+    </header>
+
+    <main class="corps">
+      <section id="cookie">
+        <img
+          src="./assets/citrouille-72089bdf.png"
+          alt="Pumpkin cookie"
+          class="img"
+          
+        />
+
+        <div class="parent" id="pumpkin"
+        onclick="pumpclik()"> 
+          <svg>
+            <filter id="wavy">
+              <feTurbulence x="0" y="0" baseFrequency="0.009" numOctaves="5" speed="2">
+                <animate attributeName="baseFrequency" dur="60s" values="0.02; 0.005; 0.02" repeatCount="indefinite">
+                </animate>
+              </feTurbulence>
+              <feDisplacementMap in="SourceGraphic" scale="30">
+                </feDisplacementMap>
+                </feTurbulence>
+            </filter>
+          </svg>
+          <div class="circle"></div>
+        </div>
+
+        <p id="pointParClick">pumpkins/click</p>
+        <h2>Score :<br /><span id="score"> 0 </span><br />cookie(s)</h2>
+      </section>
+
+      <section id="button">
+        <button id="multi5" onclick="multiplicateurx5()" disabled>
+          <p>Multiplicateur</p>
+          <p class="cout">Cost : 10 pumpkins</p>
+        </button>
+        <button id="dante" onclick="btnDante()" disabled>
+          <p>Dante</p>
+          <p class="cout"></p>
+        </button>
+        <button id="auto" onclick="autoclicker()" disabled>
+          <p>Auto-clicker</p>
+          <p class="cout">Cost 100 pumpkins</p>
+        </button>
+        <button id="bonus" onclick="sweatrick()" disabled>
+          <p>Sweats or Tricks</p>
+          <p class="cout">Cost 1000 pumpkins</p>
+        </button>
+      </section>
+    </main>
+
+    
+    <script>
+      function accepterCookies() {
+        document.cookie =
+          "accepterCookies=true; expires=" +
+          new Date(
+            new Date().getTime() + 365 * 24 * 60 * 60 * 1000
+          ).toUTCString() +
+          "; path=/";
+
+        const cookieBanner = document.getElementById("cookiebanner");
+        cookieBanner.style.display = "none";
+      }
+
+      window.onload = function () {
+        const accepteCookies = getCookie("accepterCookies");
+        const cookieBanner = document.getElementById("cookiebanner");
+        if (!accepteCookies) {
+          cookieBanner.style.display = "flex";
+        } else {
+          cookieBanner.style.display = "flex";
+        }
+      };
+
+      function getCookie(name) {
+        const value = "; " + document.cookie;
+        const parts = value.split("; " + name + "=");
+        if (parts.length == 2) return parts.pop().split(";").shift();
+      }
+    </script>
+    
+  </body>
+</html>
